@@ -2,7 +2,8 @@ import {
     TIMER_SET_TIMER,
     TIMER_RESET_TIMER,
     TIMER_PLAY_TIMER,
-    TIMER_PAUSE_TIMER} from './types/timer';
+    TIMER_PAUSE_TIMER,
+    TIMER_SET_SPEED} from './types/timer';
 
 export const setTimer = payload => ({
     type: TIMER_SET_TIMER,
@@ -21,5 +22,10 @@ export const playTimer = payload => ({
 
 export const pauseTimer = payload => ({
     type: TIMER_PAUSE_TIMER,
+    payload
+});
+
+export const setSpeed = payload => ({
+    type: TIMER_SET_SPEED,
     payload
 });

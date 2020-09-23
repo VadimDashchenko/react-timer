@@ -1,11 +1,17 @@
 import React from "react";
 import PropType from 'prop-types';
+import classnames from 'classnames';
 import './styles.scss';
 
 const Button = (props) => {
     const {title, type, onClick} = props;
+    const cn = classnames({
+        "button": true,
+        "button__start": type === 'start',
+        "button__reset": type === 'reset',
+    })
     return(
-        <button className="button" onClick={onClick}>{title}</button>
+        <button className={cn} onClick={onClick}>{title}</button>
     )
 }
 

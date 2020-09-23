@@ -1,8 +1,19 @@
-.button{
-  &__start{
+.button {
+  outline: none;
+  border-style: none;
+  color: #fff;
+  padding: 5px;
+  text-transform: uppercase;
 
+  &:hover {
+    cursor: pointer;
   }
-  &__reset{
 
+  &__start {
+    background-color: #2BBBAD;
+  }
+
+  &__reset {
+    background-color: red;
   }
 }

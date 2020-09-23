@@ -1,0 +1,42 @@
+.timer{
+  display: flex;
+  flex-direction: column;
+  &__title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    span{
+      text-transform: capitalize;
+      font-size: 13px;
+      font-weight: bold;
+    }
+  }
+  &__description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    span{
+      margin-right: 30px;
+      font-size: 60px;
+      font-weight: bold;
+    }
+  }
+  &__time-finished{
+    span{
+      color: red;
+    }
+  }
+  &__icon{
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &__speed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
